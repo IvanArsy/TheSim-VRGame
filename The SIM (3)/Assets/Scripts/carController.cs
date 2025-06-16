@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR.Content.Interaction;
 
 
-public class carController : MonoBehaviour
+public class CarController : MonoBehaviour
 {
 
     public WheelCollider[] wheels = new WheelCollider[4];
@@ -16,6 +16,7 @@ public class carController : MonoBehaviour
     public float motorTorque;
     public float breakTorque;
     public float steeringMax;
+    public bool isPaused = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPaused) return;
         // Handle forward movement
         if (triggerForward.action.IsPressed())
         {
