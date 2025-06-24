@@ -1,15 +1,35 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Tambahkan ini untuk scene management
+using UnityEngine.SceneManagement;
 
 public class GameFinish : MonoBehaviour
 {
+    [Header("Audio")]
+    public AudioSource finishAudioSource; // Suara saat player mencapai akhir
+
+    private bool sudahTriggered = false;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!sudahTriggered && other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(3); 
+            sudahTriggered = true;
+
+            if (finishAudioSource != null && finishAudioSource.clip != null)
+            {
+                finishAudioSource.Play();
+                StartCoroutine(PindahSceneSetelahSuara(finishAudioSource.clip.length));
+            }
+            else
+            {
+                SceneManager.LoadScene(3); // Jika tidak ada audio, langsung pindah scene
+            }
         }
+    }
+
+    private IEnumerator PindahSceneSetelahSuara(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(3);
     }
 }
