@@ -13,10 +13,8 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!sudahTriggered && other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            sudahTriggered = true;
-
             if (whistleAudio != null && whistleAudio.clip != null)
             {
                 whistleAudio.Play();
@@ -24,17 +22,21 @@ public class Teleport : MonoBehaviour
             }
             else
             {
-                // Kalau tak ada suara, langsung teleport
                 TeleportPlayer();
             }
         }
     }
 
+
     IEnumerator TeleportSetelahSuara(float delay)
     {
+        Debug.Log("Coroutine started. Will wait: " + delay);
         yield return new WaitForSeconds(delay);
+        Debug.Log("Delay done. Calling TeleportPlayer...");
         TeleportPlayer();
     }
+
+
 
     void TeleportPlayer()
     {
@@ -43,4 +45,6 @@ public class Teleport : MonoBehaviour
         player.rotation = destination.rotation;
         playerg.SetActive(true);
     }
+
+
 }
