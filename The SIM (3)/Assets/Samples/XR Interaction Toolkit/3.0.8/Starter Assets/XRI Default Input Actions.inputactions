@@ -984,15 +984,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Button",
-                    "type": "Button",
-                    "id": "e1fbb7a7-ac67-4fb3-8499-139a535cca8e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1290,17 +1281,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "61bfa10a-deb4-4e9a-a160-7e659849fcd5",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2090,7 +2070,7 @@
                 {
                     "name": "Music",
                     "type": "Button",
-                    "id": "10c75ce8-73c9-4dcc-bd6b-7a421624c61b",
+                    "id": "c6c2d1af-cdbe-48e5-8d6b-294b594216f9",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -2386,7 +2366,7 @@
                 },
                 {
                     "name": "",
-                    "id": "a3fbbaee-bde6-4354-896a-b1a90f120fc4",
+                    "id": "02835078-8e8e-4fb1-9bb9-6cb9902f9f9b",
                     "path": "<XRController>{RightHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",

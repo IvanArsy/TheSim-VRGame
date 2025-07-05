@@ -13304,7 +13304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: dc341e3cc4dc3d84fabcaf470174ec15, type: 3}
-  toggleMusicButton: {fileID: -1739782912846288588, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  toggleMusicButton: {fileID: 2385196738623108114, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!82 &338386151
 AudioSource:
   m_ObjectHideFlags: 0
@@ -90304,7 +90304,7 @@ Transform:
   m_GameObject: {fileID: 1332897025900005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.1, y: 0.61, z: -38.6}
+  m_LocalPosition: {x: 2.8, y: 0.61, z: -31.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -90641,7 +90641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: dc341e3cc4dc3d84fabcaf470174ec15, type: 3}
-  toggleMusicButton: {fileID: -1739782912846288588, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  toggleMusicButton: {fileID: 2385196738623108114, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!4 &4303305638417861
 Transform:
   m_ObjectHideFlags: 0

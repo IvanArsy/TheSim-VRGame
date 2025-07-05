@@ -12,9 +12,7 @@ public class GamLobbyMenu : MonoBehaviour
 
     [Header("Main Menu Buttons")]
     public Button startButton;
-    public Button optionButton;
-    public Button aboutButton;
-    public Button quitButton;
+
 
     public List<Button> returnButtons;
 
@@ -25,9 +23,7 @@ public class GamLobbyMenu : MonoBehaviour
 
         //Hook events
         startButton.onClick.AddListener(StartGame);
-        optionButton.onClick.AddListener(EnableOption);
-        aboutButton.onClick.AddListener(EnableAbout);
-        quitButton.onClick.AddListener(QuitGame);
+
 
         foreach (var item in returnButtons)
         {
